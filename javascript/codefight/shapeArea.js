@@ -1,4 +1,4 @@
-function shapeArea(n) {
+export const shapeArea = (n) => {
     let size = n * 2 - 1;
     let res = 0;
     let i = 1;
@@ -12,7 +12,3 @@ function shapeArea(n) {
     res +=size;
     return res;
 }
-
-shapeArea(2);
-shapeArea(3);
-shapeArea(5);

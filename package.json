@@ -1,10 +1,10 @@
 {
-  "name": "Today I Learned",
+  "name": "Today-I-Learned",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --env=jsdom"
   },
   "repository": {
     "type": "git",
