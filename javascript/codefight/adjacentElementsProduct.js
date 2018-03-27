@@ -11,7 +11,3 @@ export const adjacentElementsProduct = (inputArray) => {
 
     return tmp;
 }
-
-adjacentElementsProduct([3, 6, -2, -5, 7, 3]);
-adjacentElementsProduct([-1, -2]);
-adjacentElementsProduct([5, 1, 2, 3, 1, 4]);
