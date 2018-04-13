@@ -1,11 +1,23 @@
 {
-  "name": "learn-react",
+  "name": "learn-webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
+  }
 }
