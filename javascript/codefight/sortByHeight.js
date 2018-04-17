@@ -1,29 +1,38 @@
 export const sortByHeight = (a) => {
+    let flag, 
+        len = a.length, 
+        arr = [],
+        indexVal = 0;
 
-    var flag, len = a.length;
+    for (let i = 0; i < len; i++) {
+        if (a[i] !== -1) {
+            arr[arr.length] = a[i];
+        }
+    }
+
     do {
         flag = false;
-        for (var i = 0; i < a.length-1; i++) {
-            if (a[i] < 0) {
-                continue;
-            } else if (a[i] > 0) {
+        for (var i = 0; i < arr.length-1; i++) {
 
-                if (a[i + 1] < 0) {
-                    continue;
-                }
-
-                if (a[i] > a[i+1]) {
-                    var temp = a[i];
-                    a[i] = a[i+1];
-                    a[i+1] = temp;
+                if (arr[i] > arr[i+1]) {
+                    var temp = arr[i];
+                    arr[i] = arr[i+1];
+                    arr[i+1] = temp;
                     flag = true;
                 }
-                
-            }
+                 
         }
 
     } while (flag);
 
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] !== -1) {
+            a[i] = arr[indexVal];
+            indexVal++
+        }
+    }
+
     return a;
 }
 
+sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]);
