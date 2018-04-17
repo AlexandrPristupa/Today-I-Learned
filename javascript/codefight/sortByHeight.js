@@ -34,5 +34,3 @@ export const sortByHeight = (a) => {
 
     return a;
 }
-
-sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]);
