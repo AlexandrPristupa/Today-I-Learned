@@ -10,4 +10,4 @@ export const arrayReplace = (inputArray, elemToReplace, substitutionElem) => {
     }
     
     return outPut;
-}
+};

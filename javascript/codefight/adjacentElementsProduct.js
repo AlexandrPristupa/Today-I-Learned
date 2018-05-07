@@ -10,4 +10,4 @@ export const adjacentElementsProduct = (inputArray) => {
         }
 
     return tmp;
-}
+};

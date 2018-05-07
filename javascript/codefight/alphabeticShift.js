@@ -13,4 +13,4 @@ export const alphabeticShift = (inputString) => {
     }
     
     return outPut.join('');
-}
+};

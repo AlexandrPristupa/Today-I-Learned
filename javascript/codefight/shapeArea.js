@@ -11,4 +11,4 @@ export const shapeArea = (n) => {
     res *= 2;
     res +=size;
     return res;
-}
+};

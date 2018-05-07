@@ -4,4 +4,4 @@ export const addTwoDigits = (n) => {
     let str = n + '';
     let strArr = str.split('');
     return parseInt(strArr[0]) + parseInt(strArr[1]);
-}
+};

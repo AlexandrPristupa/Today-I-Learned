@@ -17,5 +17,5 @@ export const removeKFromList = (l, k) => {
     }
   
     return output;
-  }
 
+};

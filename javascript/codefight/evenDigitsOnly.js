@@ -10,4 +10,4 @@ export const evenDigitsOnly = (n) => {
     
     return true;
     
-}
+};

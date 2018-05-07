@@ -18,4 +18,4 @@ export const isLucky = (n) => {
     } 
     
     return false;
-}
+};

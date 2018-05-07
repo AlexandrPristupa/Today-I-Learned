@@ -8,4 +8,4 @@ export const largestNumber = (n) => {
     }
 
     return +outPut;
-}
+};

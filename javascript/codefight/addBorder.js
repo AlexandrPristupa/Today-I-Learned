@@ -17,4 +17,4 @@ export const addBorder = (picture) => {
     outPut.push(`*${ border }*`);
     
     return outPut;
-}
+};

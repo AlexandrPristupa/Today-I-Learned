@@ -23,4 +23,4 @@ export const alternatingSums = (a) => {
     }
 
     return [weightTeam1, weightTeam2];
-}
+};

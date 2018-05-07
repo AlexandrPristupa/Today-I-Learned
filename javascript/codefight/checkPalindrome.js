@@ -8,4 +8,4 @@ export const checkPalindrome = (inputString) => {
   }
 
   return inputString === reversStr ? true : false;
-}
+};

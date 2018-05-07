@@ -33,4 +33,4 @@ export const sortByHeight = (a) => {
     }
 
     return a;
-}
+};

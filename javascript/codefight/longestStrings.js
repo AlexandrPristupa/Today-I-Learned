@@ -23,4 +23,4 @@ export const longestStrings = (inputArray) => {
   }
 
   return outPutArr;
-}
+};
