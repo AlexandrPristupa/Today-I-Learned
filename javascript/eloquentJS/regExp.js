@@ -43,4 +43,5 @@ export const escapeHtml = (string, type) => {
         return type === "edit" ? decodeCharacters[s] : encodeCharacters[s];
     });
 
-}
+};
+
