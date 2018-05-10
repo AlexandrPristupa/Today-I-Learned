@@ -2,7 +2,7 @@
  * @param {number} x
  * @return {number}
  */
-var reverseInteger = function(x) {
+export const reverseInteger = (x) => {
     let str = x + '';
     let revStr = '';
     let num = 0;
