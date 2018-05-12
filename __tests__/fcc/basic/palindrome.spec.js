@@ -1,4 +1,4 @@
-import { palindrome } from './../../javascript/fcc/basic-algorithm/palindrome'
+import { palindrome } from '../../../javascript/fcc/basic/palindrome'
 
 describe('findLongestWord', () => {
     it('should be return true', () => {

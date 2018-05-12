@@ -1,4 +1,4 @@
-import { findLongestWord } from './../../javascript/fcc/basic-algorithm/findLongestWord'
+import { findLongestWord } from '../../../javascript/fcc/basic/findLongestWord'
 
 describe('findLongestWord', () => {
     it('should be return 5', () => {

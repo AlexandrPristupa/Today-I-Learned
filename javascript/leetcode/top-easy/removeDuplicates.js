@@ -3,6 +3,11 @@
  * @return {number}
  */
 export const removeDuplicates = (nums) => {
+
+    if(nums.length <= 2) {
+        return;
+    }
+
     let arr = [];
     let num = 0;
 

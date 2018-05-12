@@ -10,4 +10,8 @@ describe('testing remove duplicates', () => {
         expect(removeDuplicates([1, 1, 1, 1, 1, 1])).toEqual([1]);
     });
 
+    it('should be return [1, 2]', () => {
+        expect(removeDuplicates([1, 1, 2])).toEqual([1, 2]);
+    });
+
 });

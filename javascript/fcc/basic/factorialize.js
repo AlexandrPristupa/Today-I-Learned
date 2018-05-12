@@ -5,4 +5,4 @@ export const factorialize = (num) => {
     } else {
        return num * factorialize(num - 1);
     }
-}
+};

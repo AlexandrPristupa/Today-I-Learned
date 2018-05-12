@@ -1,4 +1,4 @@
-import { factorialize } from './../../javascript/fcc/basic-algorithm/factorialize'
+import { factorialize } from '../../../javascript/fcc/basic/factorialize'
 
 describe('adjacentElementsProduct', () => {
   it('should be return 120.', () => {

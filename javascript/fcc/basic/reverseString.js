@@ -6,8 +6,8 @@ export const reverseString1 = (str) => {
     }
 
     return outPutStr;
-}
+};
 
 export const reverseString2 = (str) => {
     return str.split('').reverse().join('');
-}
+};

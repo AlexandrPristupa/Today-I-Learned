@@ -1,4 +1,4 @@
-export const convertHTML = (str) => {
+const convertHTML = (str) => {
     // &colon;&rpar;
 
     const encode = {
@@ -12,7 +12,7 @@ export const convertHTML = (str) => {
         '=': '&#x3D;'
     };
 
-    return String(str).replace(/[&<>"'`=\/]/g, function (s) {
+    return String(str).replace(/[&<>"'`=\/]/g, (s) => {
         return encode[s];
     });
 
