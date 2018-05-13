@@ -11,7 +11,7 @@ function dropElements(arr, func) {
         }
     }
     
-    return outPutArr;
-  }
+  return outPutArr;
+}
   
-  dropElements([1, 2, 3], function(n) {return n < 3; });
+dropElements([1, 2, 3], function(n) {return n < 3; });
