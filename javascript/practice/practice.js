@@ -3,7 +3,7 @@
 export const findArrow = (string) => {
 
     if (!string) {
-        return false
+        return 0;
     }
 
     let newStr = string.split('');
@@ -19,10 +19,9 @@ export const findArrow = (string) => {
     }
 
     if (arrowLeft && arrowRight) {
-        return true;
+        return 1;
     } else {
-        return false;
+        return 0;
     }
 
 };
-
