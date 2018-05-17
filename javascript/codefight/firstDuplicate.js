@@ -1,21 +1,25 @@
-function firstDuplicate(a) {
+export const firstDuplicate = (a) => {
 
     let num = 0;
-    let duplicateArr = [];
+    let index = 0;
 
     for(let i = 0; i < a.length; i++) {
         for(let j = i + 1; j < a.length; j++) {
             if(a[i] === a[j]) {
                 if(num === 0) {
-                    num = j;
-                } else {
-                    duplicateArr.push(j);
+                    num = a[j];
+                    index = j;
+                } else if(index > j) {
+                    num = a[j];
+                    index = j;
                 }
             }
         }
     }
 
-    return duplicateArr;
-}
+    if(!num && !index) {
+        return -1;
+    }
 
-console.log(firstDuplicate([2, 1, 3, 5, 3, 2]));
+    return num;
+}
