@@ -4,10 +4,10 @@ export const adjacentElementsProduct = (inputArray) => {
     let res = 0;
     let tmp = inputArray[0] * inputArray[1];
 
-    for(let i = 1; i < inputArray.length; i++) {
+    for (let i = 1; i < inputArray.length; i++) {
             res = inputArray[i] * inputArray[i + 1];
-            (res > tmp) ? tmp = res : res;
-        }
+            tmp = res > tmp ? res : tmp;
+    }
 
     return tmp;
 };

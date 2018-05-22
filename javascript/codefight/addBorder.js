@@ -1,6 +1,6 @@
 export const addBorder = (picture) => {
-    let outPut = [];
-    let firstEl = picture[0].length;
+    const outPut = [];
+    const firstEl = picture[0].length;
     let border = '';
     
     for (let i = 0; i < firstEl; i++) {
@@ -9,9 +9,8 @@ export const addBorder = (picture) => {
     
     outPut.push(`*${ border }*`);
     
-    
-    for (let i = 0; i < picture.length; i++) {
-        outPut.push(`*${ picture[i] }*`);
+    for (let item of picture) {
+        outPut.push(`*${ item }*`);
     }
     
     outPut.push(`*${ border }*`);

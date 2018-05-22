@@ -14,12 +14,12 @@ export const alternatingSums = (a) => {
       }
     }
 
-    for (let i = 0; i < team1.length; i++) {
-        weightTeam1 += team1[i];
+    for (let number of team1) {
+        weightTeam1 += number;
     }
 
-    for (let i = 0; i < team2.length; i++) {
-        weightTeam2 += team2[i];
+    for (let number of team2) {
+        weightTeam2 += number;
     }
 
     return [weightTeam1, weightTeam2];
