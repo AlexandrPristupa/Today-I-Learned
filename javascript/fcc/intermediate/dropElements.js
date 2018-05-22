@@ -1,8 +1,8 @@
-function dropElements(arr, func) {
+const dropElements = (arr, func) => {
     // Drop them elements.
-    var outPutArr = [];
-    var flag = false;
-    for(var i = 0; i < arr.length; i++) {
+    const outPutArr = [];
+    let flag = false;
+    for(let i = 0; i < arr.length; i++) {
         if(func(arr[i]) && flag === false) {
            flag = true; 
            outPutArr.push(arr[i]); 
@@ -12,6 +12,7 @@ function dropElements(arr, func) {
     }
     
   return outPutArr;
-}
+
+};
   
 dropElements([1, 2, 3], function(n) {return n < 3; });

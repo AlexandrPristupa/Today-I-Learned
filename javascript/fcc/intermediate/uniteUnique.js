@@ -1,13 +1,13 @@
-function uniteUnique(arr) {
-    var arrArguments = [];
-    var outPutArr = [];
-    var num = 0;
+const uniteUnique = (arr) => {
+    const arrArguments = [];
+    const outPutArr = [];
+    let num = 0;
   
-    for(var prop in arguments) {
+    for(let prop in arguments) {
         arrArguments.push(arguments[prop]);
     }
   
-    var flattened = arrArguments.reduce((accumulator, currentValue) => {
+    const flattened = arrArguments.reduce((accumulator, currentValue) => {
         return accumulator.concat(currentValue);
     }, []);
  
@@ -26,6 +26,6 @@ function uniteUnique(arr) {
     }
   
     return flattened;
-}
+};
   
 uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);

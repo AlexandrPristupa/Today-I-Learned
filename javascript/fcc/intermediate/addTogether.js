@@ -1,4 +1,4 @@
-function addTogether() {
+export const addTogether = () => {
 
     if(typeof arguments[0] === 'string') {
         return;
@@ -17,6 +17,7 @@ function addTogether() {
         }
 
         return sum;
+
     } else {
 
         let n = arguments[0];
@@ -27,7 +28,7 @@ function addTogether() {
             }
         };
     }
-}
+};
 
 addTogether(2, 3); // 5
 addTogether(2)(3); // 5

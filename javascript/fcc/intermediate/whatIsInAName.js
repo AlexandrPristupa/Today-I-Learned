@@ -1,9 +1,7 @@
-function whatIsInAName(collection, source) {
-    // What's in a name?
-    var arr = [];
+const whatIsInAName = (collection, source) => {
     // Only change code below this line
     
-     var srcKeys = Object.keys(source);
+    const srcKeys = Object.keys(source);
   
     return collection.filter((obj) => {
         return srcKeys.every((key) => {
@@ -12,7 +10,7 @@ function whatIsInAName(collection, source) {
     });
     
     // Only change code above this line
-}
+};
  
 whatIsInAName([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "b": 2 });
   

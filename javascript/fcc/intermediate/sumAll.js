@@ -1,8 +1,8 @@
-function sumAll(arr) {
-    var allNumbersArr = [];
-    var num = 0;
-    var len = 0;
-    var index = 0;
+const sumAll = (arr) => {
+    const allNumbersArr = [];
+    let num = 0;
+    let len = 0;
+    let index = 0;
     
     if(arr[0] > arr[1]) {
       index = arr[1];
@@ -21,6 +21,6 @@ function sumAll(arr) {
     }
     
     return num;
-}
+};
 
 sumAll([1, 4]);
