@@ -1,4 +1,4 @@
-const convertHTML = (str) => {
+export const convertHTML = (str) => {
     // &colon;&rpar;
 
     const encode = {

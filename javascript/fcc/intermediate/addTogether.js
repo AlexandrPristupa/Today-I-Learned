@@ -29,9 +29,3 @@ export const addTogether = () => {
         };
     }
 };
-
-addTogether(2, 3); // 5
-addTogether(2)(3); // 5
-addTogether("http://bit.ly/IqT6zt"); // undefined
-addTogether(2, "3"); // undefined.
-addTogether(2)([3]); // undefined
