@@ -1,13 +1,18 @@
 export const sumUpNumbers = (inputString) => {
-    const strArr = inputString.split(' ');
-    let outPutNum = 0;
+    let answer = 0,
+        currentNumber = 0;
 
-    for(let i = 0; i < strArr.length; i++) {
-        if(Number.isInteger(parseInt(strArr[i])) === true) {
-            outPutNum += parseInt(strArr[i]);
+    for (let i = 0; i < inputString.length; i++) {
+        if ('0' <= inputString[i] && inputString[i] <= '9') {
+            currentNumber = currentNumber * 10 + inputString.charCodeAt(i) - '0'.charCodeAt(0);
+        }
+        else {
+            answer += currentNumber;
+            currentNumber = 0;
         }
     }
+    answer += currentNumber;
 
-    return outPutNum;
+    return answer;
 
 };
