@@ -1,4 +1,4 @@
-import { arrayMaximalAdjacentDifference } from './../../javascript/codefight/arrayMaximalAdjacentDifference';
+import { arrayMaximalAdjacentDifference } from '../../javascript/codefights/arrayMaximalAdjacentDifference';
 
 describe('find the maximal absolute difference between any two of its adjacent elements', () => {
 

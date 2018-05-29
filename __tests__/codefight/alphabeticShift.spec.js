@@ -1,4 +1,4 @@
-import { alphabeticShift } from './../../javascript/codefight/alphabeticShift'
+import { alphabeticShift } from '../../javascript/codefights/alphabeticShift'
 
 describe('testing alphabeticShift', () => {
 

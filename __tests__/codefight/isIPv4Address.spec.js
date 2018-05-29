@@ -1,4 +1,4 @@
-import { isIPv4Address } from './../../javascript/codefight/isIPv4Address';
+import { isIPv4Address } from '../../javascript/codefights/isIPv4Address';
 
 describe('find out if it satisfies the IPv4 address naming rules.', () => {
     

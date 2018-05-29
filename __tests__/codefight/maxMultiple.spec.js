@@ -1,4 +1,4 @@
-import { maxMultiple } from './../../javascript/codefight/maxMultiple'
+import { maxMultiple } from '../../javascript/codefights/maxMultiple'
 
 describe("testing maxMultiple", () => {
   

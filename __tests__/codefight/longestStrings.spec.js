@@ -1,4 +1,4 @@
-import { longestStrings } from './../../javascript/codefight/longestStrings';
+import { longestStrings } from '../../javascript/codefights/longestStrings';
 
 describe('testing largestNumber', () => {
   

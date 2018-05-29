@@ -1,4 +1,4 @@
-import { circleOfNumbers } from './../../javascript/codefight/circleOfNumbers';
+import { circleOfNumbers } from '../../javascript/codefights/circleOfNumbers';
 
 describe('testing circleOfNumbers', () => {
 

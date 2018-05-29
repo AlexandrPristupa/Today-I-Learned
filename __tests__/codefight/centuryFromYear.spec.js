@@ -1,4 +1,4 @@
-import { centuryFromYear } from './../../javascript/codefight/centuryFromYear';
+import { centuryFromYear } from '../../javascript/codefights/centuryFromYear';
 
 describe('testing centuryFromYear', () => {
 

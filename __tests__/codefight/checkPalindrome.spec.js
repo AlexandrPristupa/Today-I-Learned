@@ -1,4 +1,4 @@
-import { checkPalindrome } from './../../javascript/codefight/checkPalindrome'
+import { checkPalindrome } from '../../javascript/codefights/checkPalindrome'
 
 describe('testing checkPalindrome', () => {
 

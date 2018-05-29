@@ -1,4 +1,4 @@
-import { depositProfit } from './../../javascript/codefight/depositProfit';
+import { depositProfit } from '../../javascript/codefights/depositProfit';
 
 describe('testing depositProfit', () => {
 

@@ -1,4 +1,4 @@
-import { extractEachKth } from './../../javascript/codefight/extractEachKth';
+import { extractEachKth } from '../../javascript/codefights/extractEachKth';
 
 describe('Given array of integers, remove each kth element from it.', () => {
 

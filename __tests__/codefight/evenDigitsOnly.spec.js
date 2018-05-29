@@ -1,4 +1,4 @@
-import { evenDigitsOnly } from './../../javascript/codefight/evenDigitsOnly';
+import { evenDigitsOnly } from '../../javascript/codefights/evenDigitsOnly';
 
 describe('testing evenDigitsOnly', () => {
 

@@ -1,4 +1,4 @@
-import { alternatingSums } from './../../javascript/codefight/alternatingSums';
+import { alternatingSums } from '../../javascript/codefights/alternatingSums';
 
 describe('testing alternatingSums', () => {
 

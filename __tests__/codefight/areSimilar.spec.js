@@ -1,4 +1,4 @@
-import { areSimilar } from './../../javascript/codefight/areSimilar';
+import { areSimilar } from '../../javascript/codefights/areSimilar';
 
 describe('testing alternatingSums', () => {
 

@@ -1,4 +1,4 @@
-import { variableName } from './../../javascript/codefight/variableName'
+import { variableName } from '../../javascript/codefights/variableName'
 
 describe("testing variableName", () => {
 

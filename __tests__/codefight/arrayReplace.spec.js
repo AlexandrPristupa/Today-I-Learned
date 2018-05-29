@@ -1,4 +1,4 @@
-import { arrayReplace } from './../../javascript/codefight/arrayReplace';
+import { arrayReplace } from '../../javascript/codefights/arrayReplace';
 
 describe('testing arrayReplace', () => {
 

@@ -1,4 +1,4 @@
-import { longestWord } from './../../javascript/codefight/longestWord';
+import { longestWord } from '../../javascript/codefights/longestWord';
 
 describe('testing longestWord', () => {
 

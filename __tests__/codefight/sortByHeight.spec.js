@@ -1,4 +1,4 @@
-import { sortByHeight } from './../../javascript/codefight/sortByHeight'
+import { sortByHeight } from '../../javascript/codefights/sortByHeight'
 
 describe("testing sortedByHeight", () => {
 

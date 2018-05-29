@@ -1,4 +1,4 @@
-import { removeKFromList } from './../../javascript/codefight/removeKFromList';
+import { removeKFromList } from '../../javascript/codefights/removeKFromList';
 
 describe('testing addTowDigits', () => {
   

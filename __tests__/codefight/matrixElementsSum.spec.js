@@ -1,4 +1,4 @@
-import { matrixElementsSum } from './../../javascript/codefight/matrixElementsSum';
+import { matrixElementsSum } from '../../javascript/codefights/matrixElementsSum';
 
 describe('testing matrixElementsSum', () => {
 

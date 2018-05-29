@@ -1,4 +1,4 @@
-import { firstDigit } from './../../javascript/codefight/firstDigit';
+import { firstDigit } from '../../javascript/codefights/firstDigit';
 
 describe('Given array of integers, remove each kth element from it.', () => {
 

@@ -1,4 +1,4 @@
-import { reverseParentheses } from './../../javascript/codefight/reverseParentheses';
+import { reverseParentheses } from '../../javascript/codefights/reverseParentheses';
 
 describe('testing reverseParentheses', () => {
 

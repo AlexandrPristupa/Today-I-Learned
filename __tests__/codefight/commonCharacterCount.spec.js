@@ -1,4 +1,4 @@
-import { commonCharacterCount } from './../../javascript/codefight/commonCharacterCount'
+import { commonCharacterCount } from '../../javascript/codefights/commonCharacterCount'
 
 describe('testing commonCharacterCount', () => {
 

@@ -1,4 +1,4 @@
-import { isLucky } from './../../javascript/codefight/isLucky';
+import { isLucky } from '../../javascript/codefights/isLucky';
 
 describe('testing isLucky', () => {
   

@@ -1,4 +1,4 @@
-import { isDigit } from './../../javascript/codefight/isDigit';
+import { isDigit } from '../../javascript/codefights/isDigit';
 
 describe('testing isDigit', () => {
 

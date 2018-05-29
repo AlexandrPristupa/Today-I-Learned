@@ -1,4 +1,4 @@
-import { addBorder } from './../../javascript/codefight/addBorder';
+import { addBorder } from '../../javascript/codefights/addBorder';
 
 describe('testing addBorder', () => {
   

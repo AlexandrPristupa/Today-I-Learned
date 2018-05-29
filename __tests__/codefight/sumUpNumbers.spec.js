@@ -1,4 +1,4 @@
-import { sumUpNumbers } from './../../javascript/codefight/sumUpNumbers'
+import { sumUpNumbers } from '../../javascript/codefights/sumUpNumbers'
 
 describe("testing sumUpNumbers", () => {
 

@@ -1,4 +1,4 @@
-import { addTwoDigits } from './../../javascript/codefight/addTwoDigits';
+import { addTwoDigits } from '../../javascript/codefights/addTwoDigits';
 
 describe('testing addTowDigits', () => {
   

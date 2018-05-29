@@ -1,4 +1,4 @@
-import { shapeArea } from './../../javascript/codefight/shapeArea'
+import { shapeArea } from '../../javascript/codefights/shapeArea'
 
 describe("testing shapeArea", () => {
   

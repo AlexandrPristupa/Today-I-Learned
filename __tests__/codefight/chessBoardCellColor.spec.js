@@ -1,4 +1,4 @@
-import { chessBoardCellColor } from './../../javascript/codefight/chessBoardCellColor';
+import { chessBoardCellColor } from '../../javascript/codefights/chessBoardCellColor';
 
 describe('testing chessBoardCellColor', () => {
   

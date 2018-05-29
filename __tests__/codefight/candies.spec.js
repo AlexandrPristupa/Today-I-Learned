@@ -1,4 +1,4 @@
-import { candies } from './../../javascript/codefight/candies';
+import { candies } from '../../javascript/codefights/candies';
 
 describe('testing arrayReplace', () => {
 

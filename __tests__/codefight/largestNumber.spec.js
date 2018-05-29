@@ -1,4 +1,4 @@
-import { largestNumber } from './../../javascript/codefight/largestNumber';
+import { largestNumber } from '../../javascript/codefights/largestNumber';
 
 describe('largestNumber', () => {
   

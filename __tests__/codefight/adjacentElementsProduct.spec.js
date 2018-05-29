@@ -1,4 +1,4 @@
-import { adjacentElementsProduct } from './../../javascript/codefight/adjacentElementsProduct'
+import { adjacentElementsProduct } from '../../javascript/codefights/adjacentElementsProduct'
 
 describe('testing adjacentElementsProduct', () => {
 

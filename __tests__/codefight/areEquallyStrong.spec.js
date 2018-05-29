@@ -1,4 +1,4 @@
-import { areEquallyStrong } from './../../javascript/codefight/areEquallyStrong';
+import { areEquallyStrong } from '../../javascript/codefights/areEquallyStrong';
 
 describe('find out if you two are equally strong', () => {
 
