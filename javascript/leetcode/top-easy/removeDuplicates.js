@@ -2,28 +2,20 @@
  * @param {number[]} nums
  * @return {number}
  */
+
 export const removeDuplicates = (nums) => {
 
-    if(nums.length <= 2) {
-        return;
+  let j = 0;
+  let i = 0;
+
+  for (let l = nums.length; i < l; i++) {
+    if (nums[j] !== nums[i]) {
+      nums[++j] = nums[i];
     }
+  }
 
-    let arr = [];
-    let num = 0;
-
-    for(let i = 0; i < nums.length; i++) {
-
-        if(i === 0) {
-            num = nums[i];
-            arr.push(nums[i]);
-        } else {
-            if(nums[i] !== num) {
-                num = nums[i];
-                arr.push(nums[i]);
-            } 
-        }
-    }
-
-    return arr;
+  return j + 1;
 
 };
+
+removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
