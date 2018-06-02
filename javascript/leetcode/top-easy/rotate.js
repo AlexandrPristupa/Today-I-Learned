@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-const rotate = function(nums, k) {
+export const rotate = function(nums, k) {
 
   const outPutArr = [];
   
@@ -18,6 +18,3 @@ const rotate = function(nums, k) {
   return outPutArr;
 
 };
-
-rotate([1, 2, 3, 4, 5, 6, 7], 3); // [5,6,7,1,2,3,4]
-rotate([99, 3, -1, 5], 2); // [-1, 5, 99, 3]
