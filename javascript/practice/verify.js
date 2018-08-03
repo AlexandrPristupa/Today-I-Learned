@@ -5,8 +5,10 @@
    kinds: (), [], <> and only these kinds.
 */
 
-export const varify = (str) => {
-  if(str) {
+export const varify = (text) => {
+  const rgx = /\(.*?\)|\<.*?\>|\[.*?\]/g;
+
+  if(text) {
     return 1;
   }
 };
