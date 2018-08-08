@@ -1,13 +1,11 @@
 export const avoidObstacles = (inputArray) => {
-  const arr = inputArray.sort((a, b) => {
-    return a - b;
-  });
+  let sum = 1;
 
-  for (let i = 1; i < arr[arr.length - 1] + 1; i++) {
-    if(arr.every((item) => {
-        return item % i !== 0;
-    })) {
-        return i;
+  for(let i = 0; i < inputArray.length; i++) {
+    if(inputArray[i] % sum === 0) {
+      i = -1;
+      sum++;
     }
   }
+  return sum;
 };
