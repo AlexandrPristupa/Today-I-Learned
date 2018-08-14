@@ -5,34 +5,49 @@
    kinds: (), [], <> and only these kinds.
 */
 
-const varify = (string) => {
+export const verify = string => {
   // const rgx = /\(.*?\)|\<.*?\>|\[.*?\]/g;
-
-  if(!string) {
+  if (!string) {
     return 1;
   }
 
-  let parentheses = "[]{}()",
-    stack = [],
-    i, character, bracePosition;
+  const following = {
+    "[": "]",
+    "{": "}",
+    "(": ")",
+    "<": ">"
+  };
 
-  for(i = 0; character = string[i]; i++) {
-    bracePosition = parentheses.indexOf(character);
+  const stackArr = [];
 
-    if(bracePosition === -1) {
-      continue;
+  let stringStack = '';
+
+  for(const character of string) {
+    if ('{[(<>)]}'.includes(character)) {
+      stringStack += character
     }
+  }
 
-    if(bracePosition % 2 === 0) {
-      stack.push(bracePosition + 1); // push next expected brace position
+  for (const character of stringStack) {
+
+    if ('{[(<'.includes(character)) {
+      // going deeper in to nesting.
+      stackArr.push(following[character]);
     } else {
-      if(stack.length === 0 || stack.pop() !== bracePosition) {
+      // coming out of nesting, check the correct closer.
+      // (which may be a "." at the end)
+      if (stackArr.pop() !== character) {
         return 0;
       }
     }
   }
-
   return 1;
 };
 
-varify('(  [  <>  ()  ]  <>  )');
+// verify('(  [  <>  ()  ]  <>  )'); // return 1
+// verify('before ( middle []) after '); // return 1
+// verify('   (   ])'); // return 0
+// verify('<(   >)'); // return 0
+// verify('---(++++)----'); // return 1
+// verify(""); // return 1
+// verify(") ("); // return 0
