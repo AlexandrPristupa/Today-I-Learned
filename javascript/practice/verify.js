@@ -6,16 +6,15 @@
 */
 
 export const verify = string => {
-  // const rgx = /\(.*?\)|\<.*?\>|\[.*?\]/g;
   if (!string) {
     return 1;
   }
 
   const following = {
-    "[": "]",
-    "{": "}",
-    "(": ")",
-    "<": ">"
+    '[': ']',
+    '{': '}',
+    '(': ')',
+    '<': '>'
   };
 
   const stackArr = [];
