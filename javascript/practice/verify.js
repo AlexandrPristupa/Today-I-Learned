@@ -29,13 +29,9 @@ export const verify = string => {
   }
 
   for (const character of stringStack) {
-
     if ('{[(<'.includes(character)) {
-      // going deeper in to nesting.
       stackArr.push(following[character]);
     } else {
-      // coming out of nesting, check the correct closer.
-      // (which may be a "." at the end)
       if (stackArr.pop() !== character) {
         return 0;
       }

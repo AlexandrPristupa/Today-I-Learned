@@ -18,8 +18,12 @@ describe('testing verify', () => {
     expect(verify('(  [  <>  ()  ]  <>  )')).toEqual(1);
   });
 
-  it('should be return 1', () => {
+  it('should be return 0', () => {
     expect(verify('   (      [)')).toEqual(0);
+  });
+
+  it('should be return 0', () => {
+    expect(verify(') (')).toEqual(0);
   });
 
 });
