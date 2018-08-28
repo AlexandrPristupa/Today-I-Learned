@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --env=jsdom"
+    "test": "jest --env=jsdom",
+    "test:cover": "jest --env=jsdom --coverage"
   },
   "repository": {
     "type": "git",
