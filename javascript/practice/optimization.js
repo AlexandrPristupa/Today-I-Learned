@@ -1,20 +1,15 @@
 // TODO: need optimization
 
-function func(s, a, b)
-{
+function func(s, a, b) {
   var match_empty=/^$/;
-  if (s.match(match_empty))
-  {
+  if (s.match(match_empty)) {
     return -1;
-  }
-  else
-  {
+  } else {
     var i=s.length-1;
     var aIndex=-1;
     var bIndex=-1;
 
-    while ((aIndex==-1) && (bIndex==-1) && (i>=0))
-    {
+    while ((aIndex==-1) && (bIndex==-1) && (i>=0)) {
       if (s.substring(i, i+1) == a)
         aIndex=i;
       if (s.substring(i, i+1) == b)
@@ -23,19 +18,20 @@ function func(s, a, b)
       i--;
     }
 
-    if (aIndex != -1)
-    {
-      if (bIndex == -1)
+    if (aIndex != -1) {
+      if (bIndex == -1) {
         return aIndex;
-      else
+      } else {
         return Math.max(aIndex, bIndex);
-    }
-    else
-    {
-      if (bIndex != -1)
+      }
+    } else {
+      if (bIndex != -1) {
         return bIndex;
-      else
+      } else {
         return -1;
+      }
     }
   }
-};
+}
+
+func('asdaasdjkasd', 'd', 's');
