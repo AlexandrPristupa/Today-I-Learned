@@ -1,36 +1,18 @@
 export const longestWord = (text) => {
-    const strArr = text.split(/\s+/g);
+  let answer = '',
+    current = [];
 
-    if(strArr.length === 1) {
-        return text;
+  for (let i = 0; i < text.length; i++) {
+    if ('a' <= text[i] && text[i] <= 'z' || 'A' <= text[i] && text[i] <= 'Z') {
+      current.push(text[i]);
+      if (current.length > answer.length) {
+        answer = current.join('');
+      }
+    } else {
+      current = [];
     }
+  }
 
-    let word = '';
-    let wordLength = 0;
-
-    for(let i = 0; i < strArr.length; i++) {
-
-        let curentWord = '';
-
-        if(strArr[i][strArr[i].length - 1] === ',') {
-            curentWord = strArr[i].substring(0, strArr[i].length - 1);
-        }
-
-
-        if(/^[a-zA-Z]+$/.test(curentWord)) {
-
-            if(curentWord.length > wordLength) {
-
-                word = curentWord;
-                wordLength = curentWord.length;
-                curentWord = '';
-            }
-
-        }
-    }
-
-    return word;
+  return answer;
 
 };
-
-// longestWord("Ready, steady, go!"); return 'steady'
