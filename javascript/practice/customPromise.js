@@ -1,5 +1,5 @@
 class Promise {
-  constructor(resolve, reject) {
+  constructor(cb) {
     console.log('Promise');
   }
 
@@ -12,4 +12,6 @@ class Promise {
   }
 }
 
-const promise = new Promise();
+const promise = new Promise(function(resolve, reject) {
+  
+});
