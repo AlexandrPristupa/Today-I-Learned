@@ -1,56 +1,51 @@
-console.log(this);
-
-function Foo (a) {
-    this.a = a;
-    console.log(this);
-};
-
-var foo = new Foo('bar')
-
-console.log(foo);
+'use strict';
 
 function bar() {
-    var self = this;
-    console.log(self);
+    console.log(this.test);
 }
 
-bar();
+console.log(bar)
 
-function voo() {
-    console.log(this);
-    console.log(this.name);
+// const foo = () => {
+//     console.log(this);
+// };
+
+// foo();
+
+const object = {
+    bar: bar,
+    test: 'sasha'
+};
+
+console.log(object);
+
+function Foo(a) {
+    this.a = a;
 }
 
-voo();
-
-var obj = {
-    name: 'name',
-    foo: function() {
-        console.log(this.foo);
-        console.log(this.name);
-    },
-    bar: voo
+function Bar(c) {
+    this.c = c;
 }
 
-obj.foo();
-obj.bar();
+Bar.prototype = Object.create(Foo.prototype);
 
-var o = {
-    a: 'ad',
-    b: 'klml',
-    f: function() {
-        return this.a;
-    }
+const d = new Foo('1');
+const c = new Foo('2');
+const q = new Bar('3');
+
+Foo.prototype.test = function() {
+    console.log(this.a);
 }
 
-var g = o;
-
-var d = g.f();
-
-console.log(g);
-
+d.test();
 console.log(d);
+console.log(c);
+console.log(q);
+q.test.call({ a: '3' })
+// const object1 = {
+//     test: 'test',
+//     test1: 'test1'
+// }
 
-
-
-
+// object.bar.call(object1);
+// object.bar.call(object);
