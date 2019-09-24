@@ -1,41 +1,17 @@
 class Event {
-  constructor() {
-    this.stack = [];
-  }
+  constructor() {}
 
-  addEventListener(eventType, cb) {
-
+  addEventListener(type, callback) {
     const event = {
-      type: eventType
+      type
     };
 
-    this.stack.push({
-      eventType,
-      cb
-    });
-
-    cb(event);
-
-    console.log(this.stack);
+    console.log(type);
   }
-
-  removeEventListener(eventType, cb) {
-    this.stack = this.stack.filter((event) => event.eventType !== eventType);
-  }
-
 }
 
-const events = new Event();
 
-const click = (e) => { console.log(e) };
-const onChange = (e) => { console.log(e) };
+const event = new Event();
 
-events.addEventListener('click', click);
-events.addEventListener('click', click);
-events.addEventListener('click', click);
-events.addEventListener('click', click);
-events.addEventListener('onChange', onChange);
-
-events.removeEventListener('click');
-
-events.addEventListener('click', click);
+event.addEventListener('click', event => { console.log(event) });
+event.addEventListener('onchange', event => { console.log(event) });
